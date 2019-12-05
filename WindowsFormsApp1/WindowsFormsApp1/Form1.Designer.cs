@@ -61,22 +61,22 @@
             // 
             // ContactListView
             // 
-            this.ContactListView.Dock = System.Windows.Forms.DockStyle.Right;
             this.ContactListView.LargeImageList = this.imageList1;
-            this.ContactListView.Location = new System.Drawing.Point(230, 24);
+            this.ContactListView.Location = new System.Drawing.Point(75, 218);
             this.ContactListView.Name = "ContactListView";
-            this.ContactListView.Size = new System.Drawing.Size(441, 305);
+            this.ContactListView.Size = new System.Drawing.Size(694, 305);
             this.ContactListView.TabIndex = 0;
             this.ContactListView.UseCompatibleStateImageBehavior = false;
             this.ContactListView.SelectedIndexChanged += new System.EventHandler(this.ContactListView_SelectedIndexChanged);
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Dock = System.Windows.Forms.DockStyle.None;
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.fileToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Location = new System.Drawing.Point(75, 181);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(671, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(45, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -230,9 +230,9 @@
             this.groupBox1.Controls.Add(this.EmailTextBox);
             this.groupBox1.Controls.Add(this.DeleteButton);
             this.groupBox1.Controls.Add(this.LastNameTextBox);
-            this.groupBox1.Location = new System.Drawing.Point(12, 27);
+            this.groupBox1.Location = new System.Drawing.Point(75, 553);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(212, 302);
+            this.groupBox1.Size = new System.Drawing.Size(694, 302);
             this.groupBox1.TabIndex = 12;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Contacts";
@@ -319,10 +319,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(671, 329);
+            this.AutoScroll = true;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(829, 1061);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.ContactListView);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Text = "Form1";
